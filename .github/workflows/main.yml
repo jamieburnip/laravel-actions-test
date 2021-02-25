@@ -4,7 +4,7 @@ name: Test Laravel Github action
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   laravel-tests:
@@ -76,3 +76,8 @@ jobs:
       run: |
         composer require --dev squizlabs/php_codesniffer
         vendor/bin/phpcs --standard=PSR12 app
+
+
+
+
+
